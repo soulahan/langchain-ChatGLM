@@ -130,7 +130,7 @@ llm_model_dict = {
         "mode": "remote",
         "provides": "OpenAILLM",  # 使用fastchat api时，需保证"provides"为"FastChatOpenAILLM"
         "api_base_url": "https://ai.fakeopen.com/v1",  # "name"修改为fastchat服务中的"api_base_url"
-        "api_key": "fk-e2NMmrlkjtBAB8rOyU4yYbnje0EN-p85Xeb_dJmdJIU"
+        "api_key": ""
     },
 }
 
