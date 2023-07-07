@@ -42,9 +42,9 @@ documents = loader.load()
 # 使用text_splitter对文档进行分割
 split_text = text_splitter.split_documents(documents)
 try:
-	for document in tqdm(split_text):
-		# 获取向量并储存到pinecone
-		Pinecone.from_documents([document], embeddings, index_name=pinecone_index)
+    for document in tqdm(split_text):
+        # 获取向量并储存到pinecone
+        Pinecone.from_documents([document], embeddings, index_name=pinecone_index)
 except Exception as e:
     print(f"Error: {e}")
     quit()

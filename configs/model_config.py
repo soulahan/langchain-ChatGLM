@@ -16,7 +16,7 @@ embedding_model_dict = {
     "ernie-tiny": "nghuyong/ernie-3.0-nano-zh",
     "ernie-base": "nghuyong/ernie-3.0-base-zh",
     "text2vec-base": "shibing624/text2vec-base-chinese",
-    "text2vec": "GanymedeNil/text2vec-large-chinese",
+    "text2vec": r"D:\GPT\huggingface_models\text2vec-large-chinese",
     "m3e-small": "moka-ai/m3e-small",
     "m3e-base": "moka-ai/m3e-base",
 }
@@ -154,8 +154,7 @@ STREAMING = True
 USE_PTUNING_V2 = False
 
 # LLM running device
-LLM_DEVICE = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
-
+LLM_DEVICE = "cpu"
 # 知识库默认存储路径
 KB_ROOT_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "knowledge_base")
 
